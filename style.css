@@ -1,0 +1,84 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('uleam\ -\ docentes.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; /* Altura del contenedor del encabezado */
+  margin-top: 100px; /* Ajustamos la distancia del encabezado desde la parte superior */
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px; /* Tamaño del texto del encabezado */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 150px); /* Restamos la altura del encabezado */
+}
+
+.login-container, .signup-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+input, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #1877f2; /* Color de botón similar al de Facebook */
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2268c6; /* Cambio de color al pasar el ratón similar al de Facebook */
+}
+
+.forgot-password {
+  text-align: right;
+  color: #1877f2; /* Color de enlace similar al de Facebook */
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
